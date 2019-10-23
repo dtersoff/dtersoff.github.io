@@ -9567,6 +9567,11 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+.skills-icons {
+  font-size: 4.5em;
+  margin: 0.1em;
+}
+
 .divider-custom {
   margin: 1.25rem 0 1.5rem;
   width: 100%;

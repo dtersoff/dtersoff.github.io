@@ -18,6 +18,15 @@
   <!-- Theme CSS -->
   <link href="css/freelancer.min.css" rel="stylesheet">
 
+  <!-- Dev Icons -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="devicon.css">
+
+  <!--  if you want colored versions -->
+  <link rel="stylesheet" href="devicon-colors.css">
+
+
+
 </head>
 
 <body id="page-top">
@@ -54,7 +63,7 @@
     <div class="container d-flex align-items-center flex-column">
 
       <!-- Masthead Avatar Image -->
-      <img class="masthead-avatar mb-5" src="img/david-12.jpg" alt="">
+      <img class="masthead-avatar mb-5" src="img/david-12.jpg" alt="A photo of David Tersoff">
 
       <!-- Masthead Heading -->
       <h1 class="masthead-heading text-uppercase mb-0">David Tersoff</h1>
@@ -93,17 +102,6 @@
       <!-- Portfolio Grid Items -->
       <div class="row">
 
-        <!-- Portfolio Item 1 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/tictactoe.png" alt="">
-          </div>
-        </div>
 
         <!-- Portfolio Item 2 -->
         <div class="col-md-6 col-lg-4">
@@ -140,6 +138,18 @@
             <img class="img-fluid" src="img/portfolio/fgo2.png" alt="">
           </div>
         </div>
+
+        <!-- Portfolio Item 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/tictactoe.png" alt="">
+          </div>
+        </div>
       <!-- /.row -->
 
     </div>
@@ -163,11 +173,8 @@
 
       <!-- About Section Content -->
       <div class="row">
-        <div class="col-lg-4 ml-auto">
+        <div class="col-lg">
           <p class="lead">I am a software engineer with a passion for breaking down complex problems into simple effective algorithms.</p>
-        </div>
-        <div class="col-lg-4 mr-auto">
-          <p class="lead">Lorem Ipsum</p>
         </div>
       </div>
 
@@ -181,14 +188,14 @@
 
     </div>
   </section>
-  <section class="page-section bg-primary text-white mb-0" id="skills">
+  <section class="page-section text-secondary mb-0" id="skills">
     <div class="container">
 
       <!-- Skills Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-white">Skills</h2>
+      <h2 class="page-section-heading text-center text-uppercase text-secondary">Skills</h2>
 
       <!-- Icon Divider -->
-      <div class="divider-custom divider-light">
+      <div class="divider-custom">
         <div class="divider-custom-line"></div>
         <div class="divider-custom-icon">
           <i class="fas fa-star"></i>
@@ -197,12 +204,26 @@
       </div>
 
       <!-- About Section Content -->
-      <div class="row">
-        <div class="col-lg-4 ml-auto">
-          <p class="lead">I'm going to fill in some stuff later</p>
-        </div>
-        <div class="col-lg-4 mr-auto">
-          <p class="lead">Also maybe change the coloring</p>
+      <div class="row justify-content-center">
+        <div class="auto">
+          <p class="lead">
+            <div class='skills-icons text-center'>
+              <i class="devicon-atom-plain-wordmark colored" title="Atom"></i>
+              <i class="devicon-express-original-wordmark" title="Express"></i>
+              <i class="devicon-git-plain-wordmark colored" title="Git"></i>
+              <i class="devicon-github-plain-wordmark colored" title="GitHub"></i>
+              <i class="devicon-heroku-original-wordmark colored" title="Heroku"></i>
+              <i class="devicon-html5-plain-wordmark colored" title="HTML5"></i>
+              <i class="devicon-javascript-plain-wordmark colored" title="JavaScript"></i>
+              <i class="devicon-jquery-plain-wordmark colored" title="jQuery"></i>
+              <i class="devicon-mongodb-plain-wordmark colored" title="MongoDB"></i>
+              <i class="devicon-nodejs-plain-wordmark colored" title="Node JS"></i>
+              <i class="devicon-rails-plain-wordmark colored" title="Rails"></i>
+              <i class="devicon-react-original-wordmark colored" title="React"></i>
+              <i class="devicon-ruby-plain-wordmark colored" title="Ruby"></i>
+              <i class="devicon-handlebars-original-wordmark colored" title="Handlebars"></i>
+            </div>
+          </p>
         </div>
       </div>
 
@@ -210,6 +231,7 @@
   </section>
 
   <!-- Contact Section -->
+  <hr class=bg-secondary>
   <section class="page-section" id="contact">
     <div class="container">
 
@@ -226,6 +248,7 @@
       </div>
 
       <!-- Contact Section Form -->
+
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
@@ -313,7 +336,7 @@
   <!-- Copyright Section -->
   <section class="copyright py-4 text-center text-white">
     <div class="container">
-      <small>Copyright &copy; Your Website 2019</small>
+      <small>Copyright &copy; https://dtersoff.github.io 2019</small>
     </div>
   </section>
 
@@ -327,7 +350,7 @@
   <!-- Portfolio Modals -->
 
   <!-- Portfolio Modal 1 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -366,7 +389,7 @@
   </div>
 
   <!-- Portfolio Modal 2 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -405,7 +428,7 @@
   </div>
 
   <!-- Portfolio Modal 3 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -444,7 +467,7 @@
   </div>
 
   <!-- Portfolio Modal 4 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -470,84 +493,6 @@
                 <img class="img-fluid rounded mb-5" src="img/portfolio/fgo2.png" alt="">
                 <!-- Portfolio Modal - Text -->
                 <p class="mb-5">A ground-up rebuild of the previous Fate/Grand Order app, using Express and React instead of Rails and Handlebars, with additional features added. <a href="https://github.com/dtersoff/fate-calculator-2-client" target="_blank">See repo here.</a></p>
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Close Window
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 5 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/safe.png" alt="">
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Close Window
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 6 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/submarine.png" alt="">
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
